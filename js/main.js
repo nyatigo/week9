@@ -1,38 +1,73 @@
-var models = [
+//document.getElementsByClassName("one")[0].style.backgroundColor = "green";
+ //var node = document.createElement("div");
 
-{
-  name:"GT350R",
-  image:"img/3.jpg",
-  price:"$64,740",
-  info:"The GT350 Track Attack is a complimentary high-performance driving experience for Shelby® GT350/GT350R owners. This one-day event is designed to build the high-performance driving skills that will help you get the most out of your new GT350/GT350R. For more information, just go to www.gt350trackattack.com or call 435-27-SPEED to register."
-  
-},
+ //var textnode = document.createTextNode("cooll");
 
-{
-  name:"GT",
-  image:"img/5.jpg",
-  price:"$35,190",
-  info:"Move like a legend.The 2017 Ford Mustang is a high performance, sport coupe that competes with the Chevrolet Camaro and Dodge Challenger. Traditionally, the Mustang has been an enduring symbol for muscle car enthusiasts. The Shelby GT350 will be covered in a separate overview. "
-  
-}
+// node.appendChild(textnode);
 
-];
+ //document.body.appendChild(node);
+
+ //node.id = "myId"
+
+ 
+ //var node = document.createElement("h1");
+
+ //var textnode =document.createTextNode( "Evan needs a haircut and some sunshine!");
+
+//node.appendChild(textnode);
+
+ //document.body.appendChild(node);
+
+
+ var A = document.createElement("h1");
+ var B = document.createTextNode("Comment App");
+ A.appendChild(B);
+ A.id = "A";
+ document.body.appendChild(A);
+ document.getElementById("A").style.fontSize= "60px"
+
+ var C = document.createElement("input");
+ C.id = "C"
+ C.setAttribute("type","text");
+ C.setAttribute("placeholder","UserName:");
+ document.body.appendChild(C);
+
+ var D = document.createElement("input");
+ D.id = "D"
+ D.setAttribute("type","text");
+ D.setAttribute("placeholder","Comment:");
+ document.body.appendChild(D);
+
+ var E = document.createElement("button");
+ var F = document.createTextNode("click here");
+ E.appendChild(F);
+ E.id ="E" 
+document.body.appendChild(E);
+
+document.getElementById("E").onclick = function(){fun()};
 
 function fun(){
-  var input = document.getElementById("input").value
-  var h1 = document.getElementById("name")
-  var image = document.getElementById("img")
-  var h5 = document.getElementById("price")
-  var p = document.getElementById("para")
-  for(var i = 0 ; i < models.length ; i++){
-    if(input == models[i].name){
-      h1.innerHTML = models[i].name
-      image.src= models[i].image
-      h5.innerHTML = models[i].price
-      p.innerHTML = models[i].info
-      m.innerHTML = models[i].m
+  var input = document.getElementById("C").value;
+  var comment = document.getElementById("D").value;
+  
+  
+  var G = document.createElement("div");
+ // var H = document.createTextNode("UserName:")
+  //G.appendChild(H);
+  document.body.appendChild(G)
+  G.id = "G";
+  G.innerHTML = "Username: " + input;
 
-    }
-  }
+  var I = document.createElement("div");
+  document.body.appendChild(I);
+  I.id = "G";
+  I.innerHTML = "Comment: " + comment;
+
+
+  
+  
+
+  
 
 }
+

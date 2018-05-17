@@ -1,41 +1,53 @@
 body {
-	background-image: url("../img/mus.jpg");
-	background-repeat: no-repeat;
-	background-size:cover;
-	background-position:center left;
-	height:680px;
-	text-align:center;
+	text-align: center;
+
 }
 
-h1{
-	color:white;
-	font-family: 'Pacifico', cursive;
+#C {
+	width:95%;
+	height:60px;
+	border:2px solid grey;
+	border-radius:10px;
+	padding-left:20px;
+	font-size:20px;
 }
 
-
-h3 {
-	font-family:;
-	text-decoration: underline;
-}
-
-p{
-	color:white;
-	font-family: 'Pacifico', cursive;
-}
-
-h5 {
+#D {
+	height:90px;
+	width:95%;
+	border:2px solid grey;
+	margin-top:40px;
+	border-radius:5%;
+	padding:0px 0 20px 20px; 
+	font-size:20px;
 	
-font-family: 'Pacifico', cursive;
-color:white;
+}
+
+#A {
+	margin-top:40px;
+	margin-bottom:60px;
+}
+
+#E {
+	margin-top:40px;
+	height:60px;
+	width:150px;
+	border:0px solid white;
+	border-radius: 10%;
+	background-color: blue;
+	color:white;
+	font-size:30px;
 
 }
 
-#btn:hover {
-  background-color:black;
-  color:green;
+#E:hover {
+	background-color:darkblue;
+	cursor: pointer;
 }
 
-
-#img{
-	width:200px;
+#G{
+	font-size:30px;
+	width:80%;
+	height:90px;
+	border:1px solid grey;
 }
